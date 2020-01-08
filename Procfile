@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -cp target/*:target/dependency/* com.mkyong.rest.ExecuteMain
+web: java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port $PORT target/*.war

@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -cp target/classes:target/dependency/* testng.MainClass
+web: java $JAVA_OPTS -cp target/*:target/dependency/* com.mkyong.rest.ExecuteMain

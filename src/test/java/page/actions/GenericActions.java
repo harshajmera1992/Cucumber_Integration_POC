@@ -8,7 +8,6 @@ import helper.driverUtils.navigation.NavigationHelper;
 import helper.driverUtils.textbox.TextBoxHelper;
 import helper.driverUtils.wait.WaitHelper;
 import helper.javaUtils.ExcelDataReader;
-import helper.sfUtils.SalesforceAPIUtility;
 
 import java.util.List;
 import java.util.Map;
@@ -19,11 +18,9 @@ import org.testng.Assert;
 import page.objects.GenericActionsObjects;
 
 import com.cucumber.listener.Reporter;
-import com.sforce.ws.ConnectionException;
 
 import constants.PathConstants;
 import cucumber.api.DataTable;
-import cucumber.api.Scenario;
 
 public class GenericActions {
 
@@ -167,7 +164,7 @@ public class GenericActions {
 	        }
 	}
 	
-	public static void executeAnonymous(String query) throws ConnectionException{
+/*	public static void executeAnonymous(String query) throws ConnectionException{
 		SalesforceAPIUtility apiUtil = new SalesforceAPIUtility();
 		
 		apiUtil.setUsername(ExcelDataReader.setSoapCreds(PathConstants.SAMPLEDATA_PATH, "SoapCredentials").get("AdminUsername"));
@@ -178,7 +175,7 @@ public class GenericActions {
 		apiUtil.setSoapConnection(apiUtil.getPartnerConnection(), apiUtil.getConnectorConfig());
 		
 		apiUtil.executeAnonymous(apiUtil.getConnectorConfig(), apiUtil.getSoapConnection(), query);
-	}
+	}*/
 
 	public static void fillMandatoryFieldsOpportunity(DataTable dt) throws InterruptedException {
 		List<Map<String, String>> list = dt.asMaps(String.class, String.class);

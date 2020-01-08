@@ -1,4 +1,4 @@
-package helper.sfUtils;
+/*package helper.sfUtils;
 
 import com.sforce.soap.apex.ExecuteAnonymousResult;
 import com.sforce.soap.apex.SoapConnection;
@@ -55,13 +55,13 @@ public class SalesforceAPIUtility {
 		this.connectorConfig = connectorConfig;
 	}
 
-	/*public Configuration getSalesforceAPIUtilityConfig() {
+	public Configuration getSalesforceAPIUtilityConfig() {
 		return config;
 	}
 
 	public void setSalesforceAPIUtilityConfig(Configuration config) {
 		SalesforceAPIUtility.config = config;
-	}*/
+	}
 	
 	
 	public void setPartnerConnection(String username, String password, String authEndPoint)throws ConnectionException{
@@ -89,7 +89,7 @@ public class SalesforceAPIUtility {
 	}
 	
 	
-	/** Executes the anonymous query
+	*//** Executes the anonymous query
 	 * @param connectorConfig
 	 * 					Connection object for connecting to Salesforce
 	 * @param soapConnection
@@ -99,7 +99,7 @@ public class SalesforceAPIUtility {
 	 * @return Object
 	 * 					True, if query got executed successfully, otherwise returns the error for the failure
 	 * @throws ConnectionException
-	 */
+	 *//*
 	public Object executeAnonymous(ConnectorConfig connectorConfig, SoapConnection soapConnection, String query) throws ConnectionException{
 		
 		String serverURL = connectorConfig.getServiceEndpoint().replace("/Soap/u/", "/Soap/s/"); 
@@ -121,3 +121,4 @@ public class SalesforceAPIUtility {
 		}		
 	}
 }
+*/

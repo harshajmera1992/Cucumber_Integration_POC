@@ -3,7 +3,7 @@ Description: The purpose of this feature is to validate deal size of the opportu
 
  Scenario: Validate value of field "Deal Size" is set as "Medium" when Amount is 50,000
    Given Login to application with username - "qacandidate@tod.com.test" and password - "QATask4444"
- 	 And Navigate to App Launcher -> "Service Console" app 
+ 	## And Navigate to App Launcher -> "Service Console" app 
 	 And Click on Opportunities tab dropdown and then on New Opportunity link
 	 And Fill below mandatory fields of opportunity :
 			 |Opportunity Name 	   | Close Date | Stage 		  | Amount  |
